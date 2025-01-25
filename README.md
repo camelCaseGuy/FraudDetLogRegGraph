@@ -19,9 +19,9 @@ Python:
 ### Data Preparation
 Load Dataset:
 - Use Python to load the Kaggle dataset or synthetic data.
-- Create Graph Structure:
-    - Add relationships between transactions, users, and merchants (e.g., User A → Transaction 1 → Merchant X).
-    - Export graph data to Neo4j and Apache Spark.
+Create Graph Structure:
+- Add relationships between transactions, users, and merchants (e.g., User A → Transaction 1 → Merchant X).
+- Export graph data to Neo4j and Apache Spark.
 ### Neo4j Graph Analysis
 - Import graph data into Neo4j.
 Nodes: Users, Transactions, Merchants.
@@ -49,44 +49,11 @@ Evaluate Model:
 Use Matplotlib/Seaborn to:
 - Plot graph structures with fraudulent nodes highlighted.
 - Display feature importance and model evaluation metrics.
-## Repository Structure
-fraud-detection-graph-logistic-regression/
-├── data/
-│   ├── raw_data.csv           # Original dataset
-│   ├── graph_data.csv         # Enriched graph data
-│   ├── processed_data.csv     # Preprocessed data for ML
-├── notebooks/
-│   ├── data_preprocessing.ipynb  # Data preparation and graph creation
-│   ├── neo4j_analysis.ipynb      # Graph analysis with Neo4j
-│   ├── spark_graphframes.ipynb   # Spark GraphFrames analysis
-│   ├── logistic_regression.ipynb # Logistic regression and evaluation
-├── src/
-│   ├── neo4j_queries.py       # Scripts for interacting with Neo4j
-│   ├── spark_graph_analysis.py # Spark GraphFrames operations
-│   ├── model_training.py      # Logistic regression model training
-├── results/
-│   ├── visualizations/        # Graphs and evaluation metrics
-├── README.md                  # Project description
-├── requirements.txt           # Dependencies
-└── LICENSE
-
-Project Title and Description:
-"Fraud Detection Using Logistic Regression and Graph Analytics."
-Brief description of the project and its goals.
 Tech Stack:
 Python, Neo4j, GraphFrames for Spark, Scikit-learn.
-Dataset:
-Mention the dataset source and how it's used.
-Instructions:
-Step-by-step guide to run the project.
-Results:
-Add screenshots of visualizations and performance metrics.
-Future Work:
-Ideas to extend the project (e.g., deep learning models, real-time analysis).
-## GitHub
-Notebooks:
-Jupyter notebooks with clear annotations.
-Data preparation, Neo4j queries, graph analysis, and ML modeling.
+Dataset: TBD
+Jupyterlab:
+- Data preparation, Neo4j queries, graph analysis, and ML modeling.
 Visualizations:
 - Include images of graph analysis (e.g., fraud rings) and ML evaluation metrics in the results folder.
 Interactive Demo:
