@@ -16,13 +16,13 @@ Python:
 - Matplotlib/Seaborn: Data visualization.
 - Py2Neo: To interact with Neo4j from Python.
 ## Workflow
-### Step 1: Data Preparation
+### Data Preparation
 Load Dataset:
 - Use Python to load the Kaggle dataset or synthetic data.
 - Create Graph Structure:
     - Add relationships between transactions, users, and merchants (e.g., User A → Transaction 1 → Merchant X).
     - Export graph data to Neo4j and Apache Spark.
-### Step 2: Neo4j Graph Analysis
+### Neo4j Graph Analysis
 - Import graph data into Neo4j.
 Nodes: Users, Transactions, Merchants.
 Relationships: User-Transaction, Transaction-Merchant.
@@ -30,12 +30,12 @@ Relationships: User-Transaction, Transaction-Merchant.
 - Identify densely connected nodes (potential fraud rings).
 - Calculate centrality or community detection for suspicious users.
 - Export graph features (e.g., degree centrality, clustering coefficient) to use in the logistic regression model.
-### Step 3: GraphFrames with Spark
+### GraphFrames with Spark
 Use GraphFrames to:
 - Compute additional graph metrics (e.g., PageRank, shortest paths).
 - Identify fraudulent clusters in the graph.
 - Join these features with transaction data.
-### Step 4: Logistic Regression Model
+### Logistic Regression Model
 Preprocess Data:
 - Combine graph features and transaction features.
 - Normalize/scale features as needed.
@@ -45,7 +45,7 @@ Train Logistic Regression:
 Evaluate Model:
 - Metrics: Accuracy, Precision, Recall, F1-score.
 - Visualize the confusion matrix and feature importance.
-### Step 5: Results Visualization
+### Results Visualization
 Use Matplotlib/Seaborn to:
 - Plot graph structures with fraudulent nodes highlighted.
 - Display feature importance and model evaluation metrics.
