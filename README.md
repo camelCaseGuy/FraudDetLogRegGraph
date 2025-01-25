@@ -50,8 +50,9 @@ Use Matplotlib/Seaborn to:
 - Plot graph structures with fraudulent nodes highlighted.
 - Display feature importance and model evaluation metrics.
 Tech Stack:
-Python, Neo4j, GraphFrames for Spark, Scikit-learn.
-Dataset: TBD
+- Python, Neo4j, GraphFrames for Spark, Scikit-learn.
+Dataset:
+- TBD
 Jupyterlab:
 - Data preparation, Neo4j queries, graph analysis, and ML modeling.
 Visualizations:
